@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# PROJECT NAME
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project_name: utilizar nombres que sean facilmente identificables para personas que puedan llegar a tener interés en ese modulo o que estén buscando algo similar.
 
-## Available Scripts
+> Breve descripción del proyecto, más o menos 15 - 20 palabras: 
 
-In the project directory, you can run:
+Define la uilidad básica del modulo para que easí la gente que tenía dudas respecto al título pueda salir de ellas y decidir si seguir leyendo.
 
-### `npm start`
+**Badges (opcional)** 
+En algunos archivos READMEs, es posible que hayas visto pequeñas imágenes que transmiten metadatos, como si todas las pruebas están pasando o no para el proyecto. Puedes usar [Shields](http://shields.io/) para agregar algunos a tu README. Muchos servicios también tienen instrucciones para agregar una insignia. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+Antes de comenzar a profundizar en los documentos de la API/Componente, sería genial ver cómo se ve el módulo en acción. Así puedo determinar rápidamente si el JS de ejemplo se ajusta al estilo y al problema deseados. La gente tiene muchas opiniones sobre cosas como promesas / devoluciones de llamada y ES6. Si se ajusta a los requisitos, entonces puedo proceder con más detalles.
 
-### `npm test`
+## API/Component
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+El nombre, la descripción y el uso de este módulo me parecen atractivos. Es muy probable que utilice este módulo en este momento. Solo necesito escanear la API para asegurarme de que haga exactamente lo que necesito y que se integre fácilmente en mi base de código. 
 
-### `npm run build`
+La sección de API debe detallar los objetos y funciones del módulo, sus firmas, tipos de devolución, devoluciones de llamada y eventos en detalle. Los tipos deben incluirse donde no sean obvios. Deben dejarse claras las advertencias.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Dentro de un ecosistema en particular, puede haber una forma común de instalar cosas, como usar Yarn, NuGet o Homebrew. Sin embargo, considere la posibilidad de que quien esté leyendo su archivo README sea un novato y desee más orientación. Enumerar los pasos específicos ayuda a eliminar la ambigüedad y hace que las personas usen su proyecto lo más rápido posible. Si solo se ejecuta en un contexto específico, como una versión de lenguaje de programación o un sistema operativo en particular, o tiene dependencias que deben instalarse manualmente, agregue también una subsección de Requisitos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+```shell
+    # Clone or install commands
+    npm i [project] o npm/yarn i 
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```shell
+    # test o run commands
+    npm start
+    npm run dev ...
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Inlcuir la licéncia y el link a esta
+[MIT](https://opensource.org/licenses/MIT)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
