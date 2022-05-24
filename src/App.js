@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import Dialog from './Components/Dialog/Dialog';
+import Button from './Components/Button/Button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <main className={styles.main}>
+        <Dialog
+          variant="error"
+          title="Error"
+          description="Something went wrong"
         >
-          Learn React
-        </a>
-      </header>
+          <Button variant="solid" text="Error Dialog" />
+        </Dialog>
+        <Dialog
+          variant="warning"
+          title="Warning"
+          description="Please try again"
+        >
+          <Button variant="solid" text="Warning Dialog" />
+        </Dialog>
+        <Dialog
+          variant="success"
+          title="Hurray!!"
+          description="Form submitted successfully"
+        >
+          <Button variant="solid" text="Success Dialog" />
+        </Dialog>
+      </main>
     </div>
   );
 }
