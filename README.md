@@ -1,42 +1,48 @@
-# PROJECT NAME
+# React Dialogs
 
-Project_name: utilizar nombres que sean facilmente identificables para personas que puedan llegar a tener interés en ese modulo o que estén buscando algo similar.
-
-> Breve descripción del proyecto, más o menos 15 - 20 palabras: 
-
-Define la uilidad básica del modulo para que easí la gente que tenía dudas respecto al título pueda salir de ellas y decidir si seguir leyendo.
-
-**Badges (opcional)** 
-En algunos archivos READMEs, es posible que hayas visto pequeñas imágenes que transmiten metadatos, como si todas las pruebas están pasando o no para el proyecto. Puedes usar [Shields](http://shields.io/) para agregar algunos a tu README. Muchos servicios también tienen instrucciones para agregar una insignia. 
-
+Simple dialog components to inform user of differt types of alerts.
 
 ## Usage
-Antes de comenzar a profundizar en los documentos de la API/Componente, sería genial ver cómo se ve el módulo en acción. Así puedo determinar rápidamente si el JS de ejemplo se ajusta al estilo y al problema deseados. La gente tiene muchas opiniones sobre cosas como promesas / devoluciones de llamada y ES6. Si se ajusta a los requisitos, entonces puedo proceder con más detalles.
+- Firstly, import the Dialog Component, then use the component as shown below.
+```
+<Dialog
+  variant="error"
+  title="Error"
+  description="Something went wrong"
+>
+  <Button variant="solid" text="Error Dialog" />
+</Dialog>
+```
+The design of the Dialog can be referred [here](https://www.figma.com/file/ETSvclvkfXzUIJjkufXRJ9/front_explorer?node-id=98%3A14530).
 
 ## API/Component
 
-El nombre, la descripción y el uso de este módulo me parecen atractivos. Es muy probable que utilice este módulo en este momento. Solo necesito escanear la API para asegurarme de que haga exactamente lo que necesito y que se integre fácilmente en mi base de código. 
+### Dialog Component
 
-La sección de API debe detallar los objetos y funciones del módulo, sus firmas, tipos de devolución, devoluciones de llamada y eventos en detalle. Los tipos deben incluirse donde no sean obvios. Deben dejarse claras las advertencias.
+| Prop Name     | Type                              | Description     |
+| ------------- | -------------                      | -------- |
+| variant        | 'error','success','warning'       | Describes the type Dialog(icon and the buttons on the dialog)   |
+| title           | string                          | The title displayed in the dialog  |
+| description     | string                          | The description displayed in the dialog  |
+| onClose    | func                       | Callback fired when user requests to close the dialog , Signature: `function=()=>void` |
+| onConfirm    | func                       | Callback fired when user confirms to the dialog , Signature: `function=()=>void`  |
+| show           | boolean                      | Overrides the default `false` value of show.  |
+| children          | node                     | The content displayed when the show is `false`  |
+
 
 ## Installation
-
-Dentro de un ecosistema en particular, puede haber una forma común de instalar cosas, como usar Yarn, NuGet o Homebrew. Sin embargo, considere la posibilidad de que quien esté leyendo su archivo README sea un novato y desee más orientación. Enumerar los pasos específicos ayuda a eliminar la ambigüedad y hace que las personas usen su proyecto lo más rápido posible. Si solo se ejecuta en un contexto específico, como una versión de lenguaje de programación o un sistema operativo en particular, o tiene dependencias que deben instalarse manualmente, agregue también una subsección de Requisitos.
 
 
 ```shell
     # Clone or install commands
-    npm i [project] o npm/yarn i 
-```
-
-```shell
-    # test o run commands
+    git clone https://github.com/Scientist-Ansh/dialog-design-system.git
+    cd dialog-design-system
+    npm install
     npm start
-    npm run dev ...
 ```
 
 ## License 
 
-Inlcuir la licéncia y el link a esta
+Open source
 [MIT](https://opensource.org/licenses/MIT)
 
